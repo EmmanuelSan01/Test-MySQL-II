@@ -1,4 +1,13 @@
 # Test-MySQL-II
+## Consideraciones importantes
+- Se añadió la línea `SET foreign_key_checks = 0;` a dml.sql (principio del archivo)
+- Se borraron las siguientes líneas de dml.sql:
+  ```
+  SET SQL_MODE=@OLD_SQL_MODE;
+  SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+  SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+  ```
+  (final del archivo)
 ## Examen del módulo MySQL II
 ### Descripción del proyecto
 Se ha pedido una base de datos que permita llevar control de varias acciones de gestión de una tienda de alquiler de películas, como registrar ventas e inventariar películas.
